@@ -23,7 +23,7 @@ Homepage banner
 .hero-banner {
   position: relative;
   height: 500px; 
-  background-image: url('/images/ele2.png');
+  background-image: url('images/ele2.png');
   background-size: cover;
   background-position: center;
   color: #f8f8f8;
