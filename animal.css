@@ -8,7 +8,7 @@ Sri Lankan Wildlife CSS Styling
   .hero-banner {
     position: relative;
     height: 500px; 
-    background-image: url('/images/ban5.webp');
+    background-image: url('images/ban5.webp');
     background-size: cover;
     background-position: center;
     color: #f8f8f8;
