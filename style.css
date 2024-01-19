@@ -1,0 +1,330 @@
+/* 
+***********************************************************************************************************************************
+Header and footer CSS Styling
+***********************************************************************************************************************************
+*/
+
+/* header styling */
+h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+/* 
+***********************************************************************************************************************************
+Homepage CSS Styling
+***********************************************************************************************************************************
+*/
+
+/* ********************
+Homepage banner 
+*/
+.hero-banner {
+  position: relative;
+  height: 500px; 
+  background-image: url('/images/ele2.png');
+  background-size: cover;
+  background-position: center;
+  color: #f8f8f8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-banner p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/************************************************* 
+Introduction Text
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.item {
+  padding: 10px;
+}
+
+.intro {
+  
+  grid-column: 2; /* Place the intro content in the second column */
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
+  font-size:larger;
+  background-color: #85FFBD;
+  color: black;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-radius: 16px;
+  box-shadow: 10px 10px 9px rgb(182, 182, 182);
+
+}
+
+.none {
+  display: none; /* Hide these items by default */
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .none {
+    display: none; /* Hide these items on small screens */
+  }
+}
+
+/* *************************** 
+Homepage cards styling 
+*/
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/*elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+
+/* using the has() relational pseudo selector to update custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.articles {
+  margin: 0;
+  padding: 48px 0;
+  font-size: 1.2rem;
+  min-height:65vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+/* ********************************** 
+main card css styling
+*/
+.card-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 20px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.card-content {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  margin-bottom: 15px;
+}
+
+.card-list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.card-list-item {
+  margin-bottom: 5px;
+}
+
+.card-sub-list {
+  list-style:disc;
+  padding-left: 20px;
+}
+
+.card-sub-list-item {
+  margin-bottom: 3px;
+}
+
+/* 
+*****************
+2nd main card css
+*/
+.card-container-two {
+  margin-top: 60px;
+  margin-bottom:0px;
+  display: grid;
+  grid-template-columns: 1fr 500px; /* Switched the order of columns */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-image-two {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.card-content-two {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-heading-two {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-list-two {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.card-list-item-two {
+  margin-bottom: 5px;
+}
+
+.card-sub-list-two {
+  list-style:disc;
+  padding-left: 20px;
+}
+
+.card-sub-list-item-two {
+  margin-bottom: 3px;
+}

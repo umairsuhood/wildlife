@@ -1,0 +1,217 @@
+/* 
+***********************************************************************************************************************************
+Sri Lankan Wildlife CSS Styling
+***********************************************************************************************************************************
+   Hero Banner 
+********************
+*/
+  .hero-banner {
+    position: relative;
+    height: 500px; 
+    background-image: url('/images/ele.png');
+    background-size: cover;
+    background-position: center;
+    color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-banner h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .hero-banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }/* end of banner styling */
+
+  /*************************************
+  Hero banner styling 
+  **************************************/
+
+  .hero-banner {
+    position: relative;
+    height: 500px; 
+    background-image: url('/images/leopard_7.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-banner h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero-banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+
+/* ********************************** 
+main card css styling
+*/
+.card-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 20px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+
+.card-container-two a{
+  color: rgb(255, 5, 5);
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.card-content {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  margin-bottom: 15px;
+}
+
+.card-list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.card-list-item {
+  margin-bottom: 5px;
+}
+
+.card-sub-list {
+  list-style:disc;
+  padding-left: 20px;
+}
+
+.card-sub-list-item {
+  margin-bottom: 3px;
+}
+
+
+/* 
+*****************
+2nd main card css
+*/
+.card-container-two {
+  margin-top: 60px;
+  margin-bottom:0px;
+  display: grid;
+  grid-template-columns: 1fr 500px; /* Switched the order of columns */
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-image-two {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.card-content-two {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-heading-two {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-list-two {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.card-list-item-two {
+  margin-bottom: 5px;
+}
+
+.card-sub-list-two {
+  list-style:disc;
+  padding-left: 20px;
+}
+
+.card-sub-list-item-two {
+  margin-bottom: 3px;
+}
+
+
+/* accordion */
+.accordion {
+  width: 100%; /* Make the accordion full width */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color:  #f3f9ff;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}

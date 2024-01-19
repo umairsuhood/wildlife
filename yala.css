@@ -1,0 +1,206 @@
+
+/*
+Hero Banner 
+********************
+*/
+  .hero-banner {
+    position: relative;
+    height: 500px; 
+    background-image: url('/images/ban9.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-banner h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .hero-banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }/* end of banner styling */
+
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+    width: 512px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 512px;
+    height: 512px;
+  }
+  .slider-m{
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .slider-btn {
+  
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+
+  
+/* accordion */
+.accordion {
+  width: 100%; 
+  margin: 20px 0; 
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color:  #f3f9ff;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+
+
+/* 2 columm information */
+ /* Container styling */
+ .section-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image column styling */
+.image-column,
+.text-column {
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btn:hover{
+text-decoration: none;
+}
+.text-column button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.text-column button:hover {
+  color: #fff;
+  background-color: #000000;
+}
+
+.image-column {
+  background-image: url('/images/yala-card.png'); 
+  height: 600px;
+}
+
+.image-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.image-column p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.image-column button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Text column styling */
+.text-column {
+  background-color: #f7f2f2; 
+  color: black;
+}
+
+.text-column p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .section-container {
+      flex-direction: row; /* Display columns side by side */
+  }
+
+  .image-column,
+  .text-column {
+      flex: 1; 
+      margin-bottom: 0; 
+  }
+}
+
+.row
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-sized columns */
+  gap: 20px; /* Adjust the gap between columns if needed */
+}
+
+
+.text-column {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}

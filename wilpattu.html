@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilpattu national Park</title>
+
+    <link rel="stylesheet" href="wilpattu.css" type="text/css">
+    <link rel="stylesheet" href="header.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="item navbar">
+        <a href="/index.html"><img class="nav-image" src="images/fav.png" alt=""></a>
+
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wildlife.html">SL Wildlife</a></li>
+            <li><a href="animal.html">SL Animals</a></li>
+            <li><a href="dwc.html">DWC</a></li>
+            <li><a href="leopord.html">Leopard</a></li>
+            <li class="dropdown-trigger"><a href="">Animals</a>
+                <ul class="dropdown">
+                    <li><a href="yala.html">Yala</a></li>
+                    <li><a href="wilpattu.html">Wilpattu</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><!-- end of the header -->
+    
+    <main>
+        <section class="hero-banner">
+            <h1>Wilpaththu </h1>
+            <p>Lets protect animals. They deserve it!</p>
+        </section><!-- end of hero banner -->
+
+            
+        <section class="container">
+            <section class="section-container">
+                <!-- Image Column -->
+                <section class="image-column">
+                    <p>A group of elephants in Yala national park enjoying its freedom with its family. Yala is a safe place for all the animals</p>
+                </section>
+    
+                <!-- Text Column -->
+                <section class="text-column">
+                    <h1>Wilpaththu</h1>
+                    <p>Wilpattu National Park, located on Sri Lanka's northwest coast, beckons adventurers into a realm of untamed wonders. This expansive sanctuary, proudly claiming the title of the country's largest national park, unfolds its story across diverse landscapes. Within its borders, dense scrublands, natural lakes, and lush greenery create an intricate tapestry of ecosystems, providing a haven for a myriad of species.
+                        <br><br>
+                        A defining feature of Wilpattu is the presence of "villus" – serene, natural lakes that dot the park's expanse. These vital water sources become the lifeblood for the park's inhabitants, sustaining a delicate balance in this wild tapestry. Amidst this captivating backdrop, Wilpattu proudly hosts a thriving population of leopards, offering an extraordinary opportunity for wildlife enthusiasts to witness these elusive predators in their native habitat.
+                        <br><br>
+                        Beyond the realm of leopards, Wilpattu unfolds a vibrant panorama of biodiversity. Majestic elephants, elusive sloth bears, graceful spotted deer, and an array of bird species find refuge in the park's embrace. Wilpattu's allure extends beyond its wildlife, incorporating ancient ruins that weave a cultural narrative into the natural canvas.
+                        <br><br>
+                        Wilpattu embraces a philosophy of responsible tourism, encouraging visitors to tread lightly and prioritize conservation. This commitment ensures that the park remains a sanctuary where the wild thrives undisturbed. For those seeking an immersive and ethically conscious wildlife adventure, Wilpattu National Park stands as a testament to the untamed beauty of Sri Lanka's natural heritage.
+                    </p>
+                </section>
+            </section>
+
+            <!-- accordion -->
+            <section class="accordion">
+                <section class="accordion-item">
+                    <section class="accordion-header" onclick="toggleAccordion(this)">Natural Lakes (Villus):</section>
+                    <section class="accordion-content">
+                    <p>Wilpattu is characterized by its unique network of "villus," natural lakes that dot the landscape, providing essential water sources for wildlife and enhancing the park's scenic beauty</p>
+                    </section>
+                </section>
+                
+                <section class="accordion-item">
+                    <section class="accordion-header" onclick="toggleAccordion(this)">Sloth Bear Territory:</section>
+                    <section class="accordion-content">
+                        <p>Wilpattu is renowned as a prime territory for the elusive sloth bear, offering visitors a chance to observe these unique and often solitary creatures.                        </p>
+                    </section>
+
+                    <section class="accordion-item">
+                        <section class="accordion-header" onclick="toggleAccordion(this)">Birdwatcher's Paradise:</section>
+                        <section class="accordion-content">
+                        <p>WWith over 200 bird species recorded, Wilpattu is a paradise for bird enthusiasts, featuring a diverse avian population including raptors, waterbirds, and endemic species.
+                        </p>
+                        </section>
+                    </section>
+            </section>
+    </section>
+            <!-- end of accordion -->
+
+<!-- slider -->
+<section class="row" >
+    <section class="slider-m">
+        <section class="slider">
+            <section class="slides">
+                <section class="slide">
+                    <img src="images/sl4.png" alt="Image 1">
+                </section>
+
+                <section class="slide">
+                    <img src="images/sl2.png" alt="Image 2">
+                </section>
+
+                <section class="slide">
+                    <img src="images/sl1.png" alt="Image 3">
+                </section>
+
+                <section class="slide">
+                    <img src="images/main_card.png" alt="Image 4">
+                </section>
+
+                <section class="slide">
+                    <img src="images/sl5.png" alt="Image 5">
+                </section>
+
+                <section class="slide">
+                    <img src="images/sl6.png" alt="Image 6">
+                </section>
+            </section>
+    </section>
+        
+        <button class="slider-btn" onclick="prevSlide()">Previous</button>
+        <button class="slider-btn" onclick="nextSlide()">Next</button>
+    </section>  <!-- end of slider -->
+
+    <section class="text-column">
+        <p>Beyond the realm of leopards, Wilpattu unfolds a vibrant panorama of biodiversity. Majestic elephants, elusive sloth bears, graceful spotted deer, and an array of bird species find refuge in the park's embrace. Wilpattu's allure extends beyond its wildlife, incorporating ancient ruins that weave a cultural narrative into the natural canvas.
+            <br><br>
+            Wilpattu embraces a philosophy of responsible tourism, encouraging visitors to tread lightly and prioritize conservation. This commitment ensures that the park remains a sanctuary where the wild thrives undisturbed. For those seeking an immersive and ethically conscious wildlife adventure, Wilpattu National Park stands as a testament to the untamed beauty of Sri Lanka's natural heritage.</p>
+      </section>
+
+    </section>
+      
+</main>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- page footer -->
+    <footer class="footer">
+        <section class="footer_outer"><!-- Inner area of the footer "the blurr" -->
+            <section class="footer_inner"><!-- Footer content - content of all 3 columns separated by this row -->
+                <section class="layout"><!-- 1st column of footer -->
+                    <section class="layout_item w-50">
+                        <section class="newsletter">
+                            <img class="footer-img" src="images/fav.png" alt="">
+                            <h3 class="footer-title">Ceylon Wildlife</h3>
+                            <b><em><p>Please come to our website for more interesting content about Sri Lankan Wildlife</p></em></b>
+                        </section>
+                    </section><!-- end of 1st column of footer -->
+  
+                    <!--2nd column of footer -->
+                    <section class="layout_item w-25">
+                        <section class="c-nav-tool">
+                        </section>
+                    </section><!-- end of 2nd column of footer -->
+  
+                    <!-- 3rd column of footer -->
+                    <section class="layout_item w-25">
+                        <section class="c-nav-tool">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="wildlife.html">SL Wildlife</a></li>
+                            <li><a href="animal.html">SL Animals</a></li>
+                            <li><a href="dwc.html">DWC</a></li>
+                            <li><a href="leopord.html">Leopard</a></li>
+                            <li><a href="yala.html">Yala National Park</a></li>
+                            <li><a href="wilpattu.html">Wilpattu</a></li>
+                            </ul>
+                        </section>
+                    </section><!-- end of 3rd column of footer -->
+                </section><!-- end of footer section layout -->
+            </section><!-- end of inner footer section tag -->
+  
+            <section class="footer_copyright">
+               
+                <p>&copy; 2022 The CEYLONE WILDLIFE Inc.</p>
+            </section>
+        </section><!-- end of outer footer section tag -->
+    </footer>
+  <!-- ----------------------------------------------------------------------------------- -->
+
+  <script>
+    function toggleAccordion(header) {
+      const accordionItem = header.parentElement;
+      accordionItem.classList.toggle('active');
+    }
+
+    const slides = document.querySelector('.slides');
+    const slideWidth = 512;
+    let currentSlide = 0;
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % 6;
+      updateSlidePosition();
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + 6) % 6;
+      updateSlidePosition();
+    }
+  
+    function updateSlidePosition() {
+      slides.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+    }
+  </script>
+</body>
+</html>

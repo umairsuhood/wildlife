@@ -1,0 +1,194 @@
+/* 
+***********************************************************************************************************************************
+Sri Lankan Wildlife CSS Styling
+***********************************************************************************************************************************
+  */
+/************************************************* 
+Introduction Text
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: 40px;
+  text-align: center;
+   
+}
+.item {
+  padding: 10px;
+}
+
+.intro {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  grid-column: 2; /* Place the intro content in the second column */
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
+  font-size:larger;
+  background-color: #85FFBD;
+  color: black;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-radius: 16px;
+  box-shadow: 10px 10px 9px rgb(182, 182, 182);
+
+}
+
+.none {
+  display: none; /* Hide these items by default */
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .none {
+    display: none; /* Hide these items on small screens */
+  }
+}
+
+/*
+Hero Banner 
+********************
+*/
+  .hero-banner {
+    position: relative;
+    height: 500px; 
+    background-image: url('/images/ele.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-banner h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .hero-banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }/* end of banner styling */
+
+
+
+
+  /* Jumbotrons */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px; 
+    margin-top: 40px;
+}
+.grid-map{
+  width: 350px;
+}
+
+.jumbotron {
+    background-color: #f3f9ff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.jumbotron:hover {
+    transform: translate3d(0, -5px, 0);
+}
+
+.jumbotron img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    text-align: center;
+    background-color: #f3f9ff;
+}
+
+.text-only {
+  background-color: #000000 !important;
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* table */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #f3f9ff;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f9ff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th {
+    text-align: center;
+  }
+}
+
+.table-container{
+  margin-top: 40px;
+}
