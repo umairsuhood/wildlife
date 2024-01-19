@@ -66,7 +66,7 @@ text-decoration: none;
 }
 
 .image-column {
-  background-image: url('/images/fish_cat.png'); 
+  background-image: url('images/fish_cat.png'); 
   height: 600px;
 }
 
@@ -125,7 +125,7 @@ text-decoration: none;
 }
 
 .image-column-reverse {
-    background-image: url('/images/sloth.png'); 
+    background-image: url('images/sloth.png'); 
     height: 600px;
 }
 
@@ -151,7 +151,7 @@ text-decoration: none;
 .text-column-reverse {
     background-color: #f7f2f2;
     color: rgb(255, 255, 255);
-    background-image: url('/images/toq.png');
+    background-image: url('images/toq.png');
 }
 
 .text-column-reverse p {
