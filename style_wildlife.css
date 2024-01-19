@@ -55,7 +55,7 @@ Hero Banner
   .hero-banner {
     position: relative;
     height: 500px; 
-    background-image: url('/images/ele.jpg');
+    background-image: url('images/ele.jpg');
     background-size: cover;
     background-position: center;
     color: #f8f8f8;
