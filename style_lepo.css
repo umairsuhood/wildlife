@@ -1,34 +1,3 @@
-/* 
-***********************************************************************************************************************************
-Sri Lankan Wildlife CSS Styling
-***********************************************************************************************************************************
-   Hero Banner 
-********************
-*/
-  .hero-banner {
-    position: relative;
-    height: 500px; 
-    background-image: url('images/ele2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #f8f8f8;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-banner h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-
-  .hero-banner p {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }/* end of banner styling */
-
   /*************************************
   Hero banner styling 
   **************************************/
@@ -36,7 +5,7 @@ Sri Lankan Wildlife CSS Styling
   .hero-banner {
     position: relative;
     height: 500px; 
-    background-image: url('/images/leopard_7.jpg');
+    background-image: url('/images/ele2.jpg');
     background-size: cover;
     background-position: center;
     color: #f8f8f8;
